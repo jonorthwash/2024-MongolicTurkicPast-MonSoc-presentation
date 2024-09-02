@@ -126,6 +126,18 @@ bbb {
 	font-size: 110%;
 }
 
+.h4 {
+	/*text-align: center !important;*/
+	text-shadow: 5px 5px 10px black;
+	/* float: left; */
+	color: lightgreen;
+	font-size: 110%;
+	 font-family: var(--r-heading-font);
+    font-weight: var(--r-heading-font-weight);
+    line-height: var(--r-heading-line-height);
+    letter-spacing: var(--r-heading-letter-spacing);
+}
+
 .highlight-box .bottomline {
 	border-bottom: 2px solid white;
 	padding-bottom: 0.5em;
@@ -140,6 +152,23 @@ bbb {
 	text-align: center !important;
 	border-bottom: 2px solid grey;
 }
+
+th.rot90 {
+	vertical-align: bottom;
+	text-align: center;
+	padding: 0 !important;
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+th.rot90 span {
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	white-space: nowrap;
+}
+
 tr.greyedout td {
 	color: #666;
 }
@@ -182,7 +211,7 @@ table tr th {
 	text-align: center !important;
 	vertical-align: middle !important ;
 }
-table tbody tr:last-child {
+table tbody tr:last-child td {
 	border-bottom: 1px solid white;
 }
 table.center {
@@ -231,13 +260,17 @@ table.supershrink tr th {
 	vertical-align: bottom ;
 }
 
-table.booktabs tr th {
-	border-top: 3pt solid white;
-	border-bottom: 2pt solid white !important;
+table.booktabs tr th:not(.rot90) {
+	border-top: 3pt solid lightgrey;
+	border-bottom: 2pt solid lightgrey !important;
+}
+
+table.booktabs tr:last-child td {
+	border-bottom: 3pt solid lightgrey !important;
 }
 
 table.booktabs {
-	border-bottom: 3pt solid white;
+	margin-bottom: 1em;
 }
 
 .raln {
