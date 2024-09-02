@@ -1,0 +1,225 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>TITLE</title>
+
+		<meta name="description" content="TITLE">
+		<meta name="author" content="Jonathan North Washington">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- , maximum-scale=1.0, user-scalable=no" -->
+
+		<link rel="stylesheet" href="./reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="./reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="./reveal.js/dist/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="./reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+		<!-- link rel="stylesheet" href="./reveal.js/lib/css/zenburn.css" -->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './reveal.js/css/print/pdf.scss' : './reveal.js/css/print/paper.scss';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="jnw-overrides.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section id="title" data-state="no-toc-progress">
+					<h1>TITLE</h1>
+
+					<div style="padding-top:1in; padding-bottom: 2in;">
+						<div><b>Jonathan North Washington</b><br />
+						Swarthmore College</div>
+					</div>
+
+					<div style="font-style: italic">
+						CESS 2023, 2023-10-20
+					</div>
+
+					<div style="width: 98%; background: white; margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em;">
+						<img class="noframe" src="img/swarthmorelogowhite.svg" style="padding: 3px; background: none; border: none; height: 5em;"/>
+						<img class="noframe" src="img/Apertium_logo_lightbg.svg" style="padding: 3px; background: none; border: none; height: 5em;"/>
+					</div>
+					</h4>
+				</section>
+
+				<section>
+					<h2>Overview</h2>
+					<div class="float-left">
+						<div class="box">
+							<p class="bbb">My talk in a nutshell</p>
+							<p>STUFF THAT's <span class="highlight">IMPORTANT</span></p>
+						</div>
+					</div>
+					<div class="float-right">
+						<div class="box">
+							<p class="bbb">The next ~18 minutes:</p>
+							<ul>
+								<li>OUTLINE</li>
+								<ul class="shrink">
+									<li>LESS IMPORTANT POINT</li>
+								</ul>
+								<li>Concluding thoughts</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>SECTION TITLE</h2>
+					<div class="highlight-box">
+						<h4>A POINT</h4>
+						<p>SUPPORT</p>
+					</div>
+				</section>
+
+
+
+
+
+				<section>
+					<h2 class="extralarge">Thank you!</h2>
+					<p>slides available at<br/><a href="https://jonorthwash.github.io/202X-NAME/presentation.html">https://jonorthwash.github.io/202X-NAME/presentation.html</a>
+				</section>
+
+			</div>
+		</div>
+
+		<!-- script src="./reveal.js/lib/js/head.min.js"></script -->
+		<script src="./reveal.js/dist/reveal.js"></script>
+		<script src="./reveal.js/plugin/notes/notes.js"></script>
+		<script src="./reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="./reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="./reveal.js/plugin/zoom/zoom.js"></script>
+
+		<!-- Chart plugin -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+		
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				viewDistance: 20,
+				controls: true,
+				progress: true,
+				center: true,
+				history: true,
+				hash: true,
+
+				// The "normal" size of the presentation, aspect ratio will be preserved
+				// when the presentation is scaled to fit different resolutions. Can be
+				// specified using percentage units.
+				width: 1280, //960,
+				//height: 720, //700,
+				height: 1024,
+				//width: 960,
+				//height: 700,
+
+				// Factor of the display size that should remain empty around the content
+				margin: 0.1,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 1.0,
+
+				//theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Shows the slide number using default formatting
+				//Reveal.configure({ slideNumber: true });
+				//slideNumber: true,
+
+				//if true (default), fragments are generated on separate pages of pdfs
+				//pdfSeparateFragments: false,
+
+				// Slide number formatting can be configured using these variables:
+				//  "h.v":  horizontal . vertical slide number (default)
+				//  "h/v":  horizontal / vertical slide number
+				//    "c":  flattened slide number
+				//  "c/t":  flattened slide number / total slides
+				//Reveal.configure({ slideNumber: 'c' });
+				slideNumber: 'c',
+
+	chart: {
+		defaults: {
+			color: 'lightgray', // color of labels
+			scale: {
+				beginAtZero: true,
+				ticks: { stepSize: 1 },
+				grid: { color: "lightgray" } , // color of grid lines
+			},
+			plugins: {
+				tooltip: {
+					bodyFont: {size: 30}
+				},
+				legend: {
+					position: "right",
+					labels: {
+						font: { size: 40 },
+						fontColor: '#000'
+					}
+				},
+				datalabels: {
+					display: true,
+					font: {size: 20},
+				},
+			}
+		},
+		line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] },
+		bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]},
+		pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+		doughnut: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ],
+		options: {
+			plugins: {
+				datalabels: {
+					display: true,
+					font: {size: 20},
+				},
+			},},
+		},
+	},
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional reveal.js plugins
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				/***
+				dependencies: [
+					{ src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal.js/plugin/highlight/highlight.js' },
+					{ src: './reveal.js/plugin/search/search.js', async: true },
+					{ src: './reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: './reveal.js/plugin/notes/notes.js', async: true }
+				]
+				***/
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealChart, RevealMarkdown, RevealZoom, RevealHighlight, RevealNotes ]
+			});
+
+		</script>
+
+	</body>
+</html>
