@@ -265,12 +265,21 @@ table.booktabs tr th:not(.rot90) {
 	border-bottom: 2pt solid lightgrey !important;
 }
 
-table.booktabs tr:last-child td {
+table.booktabs tr:last-child td,
+table.booktabs tr:last-child th {
 	border-bottom: 3pt solid lightgrey !important;
 }
 
 table.booktabs {
 	margin-bottom: 1em;
+}
+
+table.booktabs tr:not(:nth-child(2)) th {
+	border-top: none !important;
+}
+
+table.booktabs tr:not(:last-child):not(:nth-child(2)) th {
+	border-bottom: none !important;
 }
 
 .raln {
