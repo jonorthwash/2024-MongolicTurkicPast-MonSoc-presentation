@@ -169,6 +169,22 @@ th.rot90 span {
 	white-space: nowrap;
 }
 
+td.rot270 {
+	vertical-align: bottom;
+	text-align: center;
+	padding: 0 !important;
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+td.rot270 span {
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	transform: rotate(360deg);
+	white-space: nowrap;
+}
+
 tr.greyedout td {
 	color: #666;
 }
@@ -581,6 +597,13 @@ table.nolines tbody tr:last-child {
 }
 
 .rot90 {
+	text-align: center !important ;
+	white-space: nowrap ;
+	vertical-align: middle !important ;
+	width: 1.5em;
+}
+
+.rot270 {
 	text-align: center !important ;
 	white-space: nowrap ;
 	vertical-align: middle !important ;
