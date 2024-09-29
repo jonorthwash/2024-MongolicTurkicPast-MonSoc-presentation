@@ -604,9 +604,9 @@ table.nolines tbody tr:last-child {
 }
 
 .rot270 {
-	text-align: center !important ;
+	text-align: left !important ;
 	white-space: nowrap ;
-	vertical-align: middle !important ;
+	vertical-align: top !important ;
 	width: 1.5em;
 }
 
