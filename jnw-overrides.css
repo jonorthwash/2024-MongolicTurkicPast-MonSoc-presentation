@@ -276,13 +276,14 @@ table.supershrink tr th {
 	vertical-align: bottom ;
 }
 
-table.booktabs tr th:not(.rot90) {
+table.booktabs tr:not(:last-child) th:not(.rot90):not(.bottom) {
 	border-top: 3pt solid lightgrey;
 	border-bottom: 2pt solid lightgrey !important;
 }
 
 table.booktabs tr:last-child td,
-table.booktabs tr:last-child th {
+table.booktabs tr:last-child th,
+table.booktabs tr th.bottom {
 	border-bottom: 3pt solid lightgrey !important;
 }
 
@@ -294,7 +295,7 @@ table.booktabs tr:not(:nth-child(2)) th {
 	border-top: none !important;
 }
 
-table.booktabs tr:not(:last-child):not(:nth-child(2)) th {
+table.booktabs tr:not(:last-child):not(:nth-child(2)) th:not(.bottom) {
 	border-bottom: none !important;
 }
 
@@ -976,4 +977,20 @@ refs {
 
 ref {
 	color: silver;
+}
+
+.greenpurplegradient {
+	background-image: linear-gradient(lightgreen, #c9f);
+	color: transparent;
+	background-clip: text;
+}
+
+#bothwayarrows path,
+#arrow-line2 {
+	animation: colourpulse 3s linear infinite;
+}
+
+@keyframes colourpulse {
+	0% { stroke: red !important; }
+	100% {stroke: green !important; }
 }
