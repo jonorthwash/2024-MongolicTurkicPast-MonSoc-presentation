@@ -855,9 +855,9 @@ text {
 	font-size: 22px;
 }
 
-path {
+/* path {
 	stroke: white !important;
-}
+} */
 
 .arcs path {
 	stroke-width: 3.5;
@@ -988,6 +988,7 @@ ref {
 #bothwayarrows path,
 #arrow-line2 {
 	animation: colourpulse 3s linear infinite;
+/*	stroke: white; */
 }
 
 @keyframes colourpulse {
