@@ -985,13 +985,13 @@ ref {
 	background-clip: text;
 }
 
-#bothwayarrows path,
+/* #bothwayarrows path,
 #arrow-line2 {
 	animation: colourpulse 3s linear infinite;
-/*	stroke: white; */
+	stroke: white;
 }
 
 @keyframes colourpulse {
 	0% { stroke: red !important; }
 	100% {stroke: green !important; }
-}
+} */
